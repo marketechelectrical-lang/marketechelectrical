@@ -1,0 +1,53 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512">
+      <stop stop-color="#2563EB"></stop>
+      <stop offset="1" stop-color="#60A5FA"></stop>
+    </linearGradient>
+
+    <linearGradient id="bolt" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"></stop>
+      <stop offset="1" stop-color="#DBEAFE"></stop>
+    </linearGradient>
+
+  </defs>
+
+  <!-- Background -->
+
+  <rect width="512" height="512" rx="120" fill="url(#bg)"></rect>
+
+  <!-- Glow -->
+
+  <circle cx="256" cy="256" r="180" fill="white" opacity="0.06"></circle>
+
+  <!-- Letter M -->
+
+  <path d="
+      M120 370
+      V140
+      L210 250
+      L300 140
+      V370
+      H250
+      V235
+      L210 285
+      L170 235
+      V370
+      H120
+    " fill="white" opacity="0.95"></path>
+
+  <!-- Lightning -->
+
+  <path d="
+      M315 135
+      L235 275
+      H305
+      L245 385
+      L365 225
+      H295
+      L315 135
+    " fill="url(#bolt)"></path>
+
+</svg>
