@@ -889,3 +889,131 @@ section{
   }
 
 }
+
+/* ========================= */
+/* HERO VISUAL SYSTEM */
+/* ========================= */
+
+.grid-box{
+  padding:1.2rem;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  min-height:140px;
+}
+
+.grid-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.grid-top span{
+  color:var(--text-light);
+  font-size:.9rem;
+}
+
+.grid-top strong{
+  color:var(--text);
+  font-size:1.1rem;
+}
+
+.progress{
+  width:100%;
+  height:10px;
+
+  border-radius:999px;
+
+  background:
+    rgba(255,255,255,.6);
+
+  overflow:hidden;
+}
+
+.progress-bar{
+  height:100%;
+
+  border-radius:999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--primary),
+      var(--accent)
+    );
+}
+
+.w-90{
+  width:90%;
+}
+
+.w-95{
+  width:95%;
+}
+
+.status{
+  width:16px;
+  height:16px;
+
+  border-radius:50%;
+}
+
+.status.success{
+  background:#22c55e;
+
+  box-shadow:
+    0 0 20px rgba(34,197,94,.5);
+}
+
+.chart-bars{
+  display:flex;
+  align-items:flex-end;
+  gap:.5rem;
+
+  height:60px;
+}
+
+.chart-bars div{
+  flex:1;
+
+  border-radius:999px 999px 0 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--primary),
+      var(--accent)
+    );
+
+  animation:pulse 2s infinite ease-in-out;
+}
+
+.chart-bars div:nth-child(1){
+  height:40%;
+}
+
+.chart-bars div:nth-child(2){
+  height:75%;
+}
+
+.chart-bars div:nth-child(3){
+  height:55%;
+}
+
+.chart-bars div:nth-child(4){
+  height:90%;
+}
+
+@keyframes pulse{
+
+  0%,100%{
+    opacity:.6;
+  }
+
+  50%{
+    opacity:1;
+  }
+
+}
